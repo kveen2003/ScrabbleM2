@@ -1,6 +1,7 @@
 public class Square {
 
     public void setTile(Tile tile) {
+
     }
 
     public Square clone(){
