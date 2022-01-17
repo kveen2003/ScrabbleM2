@@ -1,3 +1,5 @@
+package model.game;
+
 public class Tile {
 
     private char letter;
@@ -13,6 +15,6 @@ public class Tile {
     }
 
     public int getPoints() {
-        return points;
+        return this.points;
     }
 }
