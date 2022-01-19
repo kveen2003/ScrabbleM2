@@ -2,8 +2,8 @@ package model.game;
 
 public class Tile {
 
+    private static int points;
     private char letter;
-    private int points;
 
     public Tile(char letter, int points){
         this.letter = letter;
@@ -14,7 +14,7 @@ public class Tile {
         return letter;
     }
 
-    public int getPoints() {
-        return this.points;
+    public static int getPoints() {
+        return points;
     }
 }

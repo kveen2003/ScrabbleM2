@@ -12,12 +12,10 @@ public class TileDescription extends Tile{
         public TileDescription(char letter, int quantity, int points){
                 super(letter, points);
                 this.quantity = quantity;
-
-
-
         }
 
         public int getQuantity() {
                 return this.quantity;
         }
+
 }

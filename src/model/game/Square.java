@@ -4,7 +4,8 @@ public class Square {
 
     private Tile tile;
     private SpecialType specialType;
-    private int[] location;
+    private int[][] location;
+    private Square field;
 
     public enum SpecialType {
         CENTRE, DOUBLE_WORD, TRIPLE_WORD, DOUBLE_LETTER, TRIPLE_LETTER
@@ -14,7 +15,7 @@ public class Square {
         this.tile = tile;
     }
 
-    public void setLocation(int[] location) {
+    public void setLocation(int[][] location) {
         this.location = location;
     }
 
@@ -30,7 +31,7 @@ public class Square {
         this.specialType = specialType;
     }
 
-    public int[] getLocation() {
+    public int[][] getLocation() {
         return this.location;
     }
 
@@ -39,7 +40,11 @@ public class Square {
         return null;
     }
 
-//    public Model.Square(int x, int y, Model.Square.type type){
+    public Square getSquare() {
+        return this.field;
+    }
+
+    //    public Model.Square(int x, int y, Model.Square.type type){
 //
 //    }
 
